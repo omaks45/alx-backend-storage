@@ -9,11 +9,11 @@ CREATE FUNCTION SafeDiv(
 RETURNS FLOAT
 DETERMINISTIC
 BEGIN
-	DECLARE final FLOAT;
+	DECLARE result FLOAT;
 	IF b = 0 THEN
 		RETURN 0;
         END IF;
-        SET final = (a * 1.0) / b;
-        RETURN final;
+        SET result = (a * 1.0) / b;
+        RETURN result;
 END;$$
 DELIMITER ;
