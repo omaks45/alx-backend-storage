@@ -1,0 +1,7 @@
+// Script that lists all database
+
+db.adminCommand(
+    {
+        listDatabases: 1
+    }
+)
